@@ -1,3 +1,6 @@
+# I2C (Inter-Integrated Circuit) Communication Protocol
+The I2C (Inter-Integrated Circuit) protocol is a widely used communication interface in the ATmega328 microcontroller, enabling multiple devices to communicate using just two wires: SDA (data) and SCL (clock). It supports master and slave modes, allowing the microcontroller to connect with various peripherals such as sensors, EEPROMs, and other microcontrollers. This repository covers the register-level configuration, practical usage examples, and important considerations for implementing I2C in embedded systems.
+
 
 <table>
   <tr>
