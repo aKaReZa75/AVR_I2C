@@ -41,6 +41,9 @@ The I2C (Inter-Integrated Circuit) protocol is a widely used communication inter
 > The resources are detailed in the sections below.  
 > To access any of them, simply click on the corresponding blue link.
 
+> [!CAUTION]
+> This tutorial has not yet **started!**
+
 
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
