@@ -37,6 +37,57 @@ The I2C (Inter-Integrated Circuit) protocol is a widely used communication inter
 # 🔗 Resources
   Here you'll find a collection of useful links and videos related to the topic of AVR microcontrollers.  
   
+## **I²C / TWI Overview**
+
+```
+I2C (TWI) Overview
+├── Documentation
+│   ├─ [TWI Bit Rate]
+│   │   ├─ Registers — TWBR, TWSR (TWPS bits)
+│   │   ├─ Formula — SCL frequency calculation
+│   │   └─ Effects — Impact on communication speed and bus stability
+│   │
+│   ├─ [TWI Control Operations]
+│   │   ├─ Register — TWCR (Control Register)
+│   │   ├─ Operations — START, STOP, ACK, NACK
+│   │   └─ Bus control sequences
+│   │
+│   └─ [TWI Status Codes]
+│       ├─ Register — TWSR (Status bits)
+│       ├─ Master & Slave status ranges
+│       └─ Usage — State machine control
+│    
+│
+├── [API_Reference]
+│    ├─ File — i2c.h / i2c.c
+│    ├─ Functions — Init, Start, Stop, Write, writeAddress, Read, readAdress, readSequential
+│    └─ Purpose — High-level I2C master interface for communicating with slave devices, including sequential register access
+|
+└── Registers
+    ├─ [TWBR] — TWI Bit Rate Register — Sets SCL clock frequency
+    ├─ [TWSR] — TWI Status Register — Status codes and prescaler bits
+    ├─ [TWAR] — TWI Address Register — Slave address and general call enable
+    ├─ [TWDR] — TWI Data Register — Holds data for transmission/reception
+    ├─ [TWCR] — TWI Control Register — Controls TWI operations and interrupts
+    └─ [TWAMR] — TWI Address Mask Register — Address masking for multi-slave setups
+```
+- [TWI Bit Rate](./TWI_BitRate.md)
+  ---
+  Describes how to set the I²C clock speed using TWBR and TWPS bits in TWSR, along with the formula for calculating SCL frequency. Includes examples for 100 kHz (Standard Mode) and 400 kHz (Fast Mode).
+
+- [TWI Control Operations](./TWI_ControlOps.md)
+  ---
+  Details how to use TWCR to issue START and STOP conditions, send ACK/NACK, and manage TWI bus control sequences.
+
+- [TWI Status Codes](./TWI_StatusCodes.md)
+  ---
+  Provides a full table of TWI status codes from TWSR for both master and slave modes, with explanations of their meaning and how to use them in software-controlled state machines.
+  
+- [API Reference](./API_Reference.md)
+  ---
+  This section provides detailed descriptions of the functions in the `i2c.h` and `i2c.c` files for handling I2C master operations on the ATmega328 microcontroller. Each function is designed to manage communication with slave devices via the I2C bus, including sending and receiving data, controlling start/stop conditions, and performing sequential register-based reads. These APIs simplify I2C initialization and data exchange, making it easier to implement sensor interfacing and device control in your projects.
+  
+  
 > [!TIP]
 > The resources are detailed in the sections below.  
 > To access any of them, simply click on the corresponding blue link.
