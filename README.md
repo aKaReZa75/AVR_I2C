@@ -70,6 +70,11 @@ I2C (TWI) Overview
     ├─ [TWCR] — TWI Control Register — Controls TWI operations and interrupts
     └─ [TWAMR] — TWI Address Mask Register — Address masking for multi-slave setups
 ```
+
+> [!TIP]
+> The resources are detailed in the sections below.  
+> To access any of them, simply click on the corresponding blue link.
+
 - [TWI Bit Rate](./TWI_BitRate.md)
   ---
   Describes how to set the I²C clock speed using TWBR and TWPS bits in TWSR, along with the formula for calculating SCL frequency. Includes examples for 100 kHz (Standard Mode) and 400 kHz (Fast Mode).
@@ -86,11 +91,6 @@ I2C (TWI) Overview
   ---
   This section provides detailed descriptions of the functions in the `i2c.h` and `i2c.c` files for handling I2C master operations on the ATmega328 microcontroller. Each function is designed to manage communication with slave devices via the I2C bus, including sending and receiving data, controlling start/stop conditions, and performing sequential register-based reads. These APIs simplify I2C initialization and data exchange, making it easier to implement sensor interfacing and device control in your projects.
   
-  
-> [!TIP]
-> The resources are detailed in the sections below.  
-> To access any of them, simply click on the corresponding blue link.
-
 > [!CAUTION]
 > This tutorial has not yet **started!**
 
