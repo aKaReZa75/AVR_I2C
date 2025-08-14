@@ -57,7 +57,6 @@ I2C (TWI) Overview
 │       ├─ Master & Slave status ranges
 │       └─ Usage — State machine control
 │    
-│
 ├── [API_Reference]
 │    ├─ File — i2c.h / i2c.c
 │    ├─ Functions — Init, Start, Stop, Write, writeAddress, Read, readAdress, readSequential
