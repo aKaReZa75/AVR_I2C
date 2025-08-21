@@ -90,9 +90,35 @@ I2C (TWI) Overview
   ---
   This section provides detailed descriptions of the functions in the `i2c.h` and `i2c.c` files for handling I2C master operations on the ATmega328 microcontroller. Each function is designed to manage communication with slave devices via the I2C bus, including sending and receiving data, controlling start/stop conditions, and performing sequential register-based reads. These APIs simplify I2C initialization and data exchange, making it easier to implement sensor interfacing and device control in your projects.
   
-> [!CAUTION]
-> This tutorial has not yet **started!**
+## **Videos Overview**
+```plaintext
+AVR, Communication, I2C
+   └── [aKaReZa 114 - AVR, I2C - PART A]
+         ├─ Intro — Protocol overview and use cases.
+         ├─ Registers — Block diagram and bit-level control.
+         ├─ Safety — Atomic operations for reliable comms.
+         └─ Functions — Init, Start, Write, Read, Sequential ops. 
+```
 
+<table>
+  <tr>
+    <td valign="top" style="padding: 0 10px;">
+      <h3 style="margin: 0;">
+        <a href="https://youtu.be/KScXumQBRfo">aKaReZa 114 – AVR, I2C - PART A</a>
+      </h3>
+      <p style="margin: 8px 0 0;">
+        Learn I2C communication in AVR microcontrollers from the ground up. This video covers protocol fundamentals, register-level analysis, atomic operations, and implementation of key functions like <code>i2c_Init()</code>, <code>i2c_Start()</code>, <code>i2c_Write()</code>, and more—perfect for building reliable sensor and module interfaces.
+      </p>
+    </td>
+    <td width="360" valign="top">
+      <a href="https://youtu.be/KScXumQBRfo">
+        <img src="https://img.youtube.com/vi/KScXumQBRfo/maxresdefault.jpg"
+             width="360"
+             alt="aKaReZa 114 – AVR, I2C - PART A Thumbnail"/>
+      </a>
+    </td>
+  </tr> 
+</table>
 
 # 💻 How to Use Git and GitHub
 To access the repository files and save them on your computer, there are two methods available:
